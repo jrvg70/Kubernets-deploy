@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: app-php
+  labels: 
+    app-php
+spec: 
+  containers:
+  - name: app-php
+    image: 
+
+  replicars: 3
+  selector:
+    matchlabels:
+      app: app-php
+    template:
+    metadata:
+      labels:
+        app: app-php    
